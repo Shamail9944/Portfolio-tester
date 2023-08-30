@@ -8,7 +8,7 @@ const Bulb = () => {
         src={"/bulb.png"}
         width={260}
         height={200}
-        className="w-full h-full"
+        className="md:w-full md:h-full w-[150px] h-[225px]"
         alt=""
       />
     </div>

@@ -34,7 +34,7 @@ const serviceData = [
   {
     icon: <AiTwotoneShop />,
     title: 'E-commerce',
-    description: 'Shopping platforms with engaging user interfaces, efficient order processing, and secure payment gateways,smooth third-party APIs integrations. Enabling personalized shopping experiences, seamless checkout processes, and data-driven insights that drive conversion rates and customer loyalty.',
+    description: 'Shopping platforms with engaging user interfaces, efficient order processing, and secure payment gateways,smooth third-party APIs integrations, seamless checkout processes, and data-driven insights.',
   },
   {
     icon: <MdMiscellaneousServices />,
@@ -44,17 +44,17 @@ const serviceData = [
   {
     icon: <TiSpanner />,
     title: 'Maintenance and Support',
-    description: 'Maintenance of your app to make it robust and up-to-date through proactive monitoring and efficient updates. 24X7 support service, so that you can have uninterrupted app functioning, minimal downtime, and prevention from security vulnerabilities.',
+    description: 'App Maintenance support through proactive monitoring and updates. 24X7 service, to ensure uninterrupted app functioning, minimal downtime, and security vulnerabilities protection.',
   },
   {
     icon: <AiFillDatabase />,
     title: 'Database Development',
-    description: 'MongoDB development revolutionizes data management with a flexible NoSQL database and stores data in a document-based format. Database solution that scales effortlessly to accommodate growing data volumes, supporting agility in response to changing business needs.',
+    description: 'Data management with a NoSQL/ SQL pattern. Database solution that scales effortlessly to accommodate growing data volumes, supporting agility in response to changing business needs.',
   },
   {
     icon: <GiElectric />,
     title: 'Interactive UI Development Services',
-    description: 'Interactive UI development with engaging and user-centric interfaces that bring your apps to life. Get your app developed with power of Reacts component-based architecture and Node.js asynchronous capabilities.',
+    description: 'UI development with engaging and user-centric interfaces that bring your apps to life. Apps developed with Reacts component-based architecture and Node.js async capabilities.',
   },
 
 ];
@@ -69,16 +69,16 @@ const ServiceSlider = () => {
       freeMode={true}
       pagination={{ clickable: true }}
       modules={[FreeMode, Pagination]}
-      className='h-[240px] sm:h-[480px]'
+      className='lg:h-[390px] h-[300px]'
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="bg-[rgba(65,47,123,0.15)] h-[90%] rounded-lg px-6 py-4 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 items-center">
+            <div className="bg-[rgba(65,47,123,0.15)] h-[90%] rounded-lg px-6 py-4 flex flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 items-center mb-10">
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
               <div className='mb-8'>
                 <div className="mb-2 text-lg text-center">{item.title}</div>
-                <p className='max-w-[350px] leading-normal text-center'>{item.description}</p>
+                <p className='max-w-[350px] leading-normal text-center overflow-hidden'>{item.description}</p>
               </div>
             </div>
           </SwiperSlide>

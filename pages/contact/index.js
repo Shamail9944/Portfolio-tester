@@ -14,7 +14,7 @@ const Contact = () => {
             animate='show'
             exit='hidden'
             transition={{ duration: 1, ease: 'easeInOut' }}
-            className="h2 text-center mb-12 ">
+            className="h2 text-center mb-5 lg:mb-12 ">
             Lets <span className='text-accent'>Connect.</span>
           </motion.h2>
           <motion.form

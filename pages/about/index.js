@@ -94,7 +94,7 @@ const About = () => {
   console.log(index);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-12 text-center xl:text-left">
       <Circles />
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -112,16 +112,17 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-4xl mb-20">
-            Software engineer, <span className="text-accent">Frontend</span> & Backend Developer.
+            className="text-xl lg:text-4xl mb-5 lg:mb-16 mt-5 lg:mt-15">
+            Software engineer, <br /><span className="text-accent">Frontend</span> & Backend Developer.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            I am Shamail, a passionate developer from Islamabad, Pakistan, who writes clean, elegant and effecient code. My expertise is developing next-level websites and web applications including scalable frontend design with MVC design backend.
+            className="max-w-[500px] mx-auto xl:mx-0 mb-5 lg:mb-6 xl:mb-12 px-2 xl:px-0">
+            I am Shamail, a passionate developer from Islamabad, Pakistan, who writes clean, elegant and effecient code. 
+            <span className="hidden lg:visible"> My expertise is developing next-level websites and web applications including scalable frontend design with MVC design backend.</span>
           </motion.p>
           {/* Counters */}
           <motion.div
@@ -168,9 +169,9 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+          className="flex flex-col w-full xl:max-w-[48%] h-[360px] lg:pl-10">
           {/* title */}
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 lg:mb-4 lg:mt-8 sm:mb-2 sm:mt-2">
             {aboutData.map((item, itemindex) => {
               return (
                 <div
@@ -190,14 +191,14 @@ const About = () => {
               return (
                 <div
                   key={itemindex}
-                  className="flex flex-col flex-1 md:flex-row max-w-max gap-x-2 items-center text-white/60">
+                  className="flex flex-row flex-1 max-w-max gap-x-2 items-center text-white/60">
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4 flex-wrap ">
                     {/* xx Icons */}
                     {item.icons?.map((icon, itemindex) => {
-                      return <div key={itemindex} className="text-2xl text-white">{icon}</div>;
+                      return <div key={itemindex} className="text-2xl text-white hover:text-accent">{icon}</div>;
                     })}
                   </div>
                 </div>

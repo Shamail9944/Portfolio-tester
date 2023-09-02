@@ -64,12 +64,15 @@ const ServiceSlider = () => {
   return (
     <Swiper breakpoints={{
       320: { slidesPerView: 1, spaceBetween: 15 },
-      640: { slidesPerView: 4, spaceBetween: 15 },
+      640: { slidesPerView: 2, spaceBetween: 15 },
+      768: { slidesPerView: 3, spaceBetween: 15 },
+      1024: { slidesPerView: 4, spaceBetween: 15 },
+
     }}
       freeMode={true}
       pagination={{ clickable: true }}
       modules={[FreeMode, Pagination]}
-      className='lg:h-[390px] h-[300px]'
+      className='md:h-[500px] lg:h-[390px] h-[300px]'
     >
       {serviceData.map((item, index) => {
         return (

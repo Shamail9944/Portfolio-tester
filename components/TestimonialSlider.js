@@ -14,21 +14,21 @@ const testimonialData = [
     name: 'Anne Smith',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Professional, comprehensive and competent experience throughout the process of our working together. We feel that we have established a relationship with you for years to come. ',
   },
   {
     image: '/t-avt-2.png',
-    name: 'Jane Doe',
+    name: 'Mark Liam',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Seen a 200% increase in the number of online contact forms being filled out and returned to us. Matt and his team worked closely with us to provide a site that met all of the criteria that we were looking for. The end result was a website that is attractive, organized and effective.',
   },
   {
     image: '/t-avt-3.png',
-    name: 'Jhon Doe',
+    name: 'Olivia Turner',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'I personally want to thank you and your staff for their patience and diligence in promptly meeting each of our requests for the site during its development.',
   },
 ];
 
@@ -44,7 +44,7 @@ const TestimonialSlider = () => {
       {testimonialData.map((person, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
+            <div className="flex flex-col items-center lg:flex-row gap-x-8 h-full px-16">
               {/* avatar, name, position */}
               <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
@@ -56,8 +56,8 @@ const TestimonialSlider = () => {
                 </div>
               </div>
               {/* quotes & messages */}
-              <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
-                <div className="mb-4" ><FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" /></div>
+              <div className="flex-1 flex flex-col md:flex-row justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
+                <div className="mb-4" ><FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-3" /></div>
                 <div className="xl:text-lg text-center md:text-left">{person.message}</div>
               </div>
             </div>

@@ -8,7 +8,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ['Web App Developer', 'Backend / Database Developer', 'MERN Stack Developer'],
+    words: ['Full Stack Developer (MERN / MEAN / NEXT JS)', 'Frontend Dev - Client Side', 'Backend Dev - Server Side', 'Database Developer', ],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
@@ -19,25 +19,25 @@ const Home = () => {
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-20  xl:text-left h-full container mx-auto">
           <motion.h1
-            className="text-xl lg:text-4xl lg:mb-10"
+            className="text-xl md:text-2xl lg:text-4xl md:mb-8 lg:mb-10"
             variants={fadeIn('down', 0.4)}
             initial='hidden'
             animate='show'
             exit='hidden'
-          >Transforming Ideas Into {' '}<br /> <span className="text-accent">Digital </span>Reality ...
+          >Transforming Ideas Into {' '}<br /> <span className="text-accent">Digital Marvels</span> ...
           </motion.h1>
           <motion.h1
-            className="h2 text-xl lg:mb-10"
+            className="h2 text-xl md:mb-8 lg:mb-10"
             variants={fadeIn('down', 0.4)}
             initial='hidden'
             animate='show'
             exit='hidden'
           >
-            Hello! I am a {' '}<br />
-            <span className="text-accent lg:text-3xl sm:text-base">{text}</span><Cursor cursorStyle='|' />
+            Hello! I am {' '}<br />
+            <span className="text-accent text-xl md:text-2xl lg:text-3xl">{text}</span><Cursor cursorStyle='|' />
           </motion.h1>
           <motion.p
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-12"
+            className="max-w-sm md:max-w-2xl xl:max-w-xl mx-auto xl:mx-0 mb-10 md:mb-60 xl:mb-12 md:tracking-widest"
             variants={fadeIn('down', 0.5)}
             initial='hidden'
             animate='show'
@@ -46,7 +46,7 @@ const Home = () => {
             I like to craft solid and scalable digital products with great user experience. Highly skilled at progressive enhancement of products design and database as per clients needs.
 
           </motion.p>
-          <div className="flex justify-center relative xl:hidden"><ProjectsBtn /></div>
+          <div className="flex justify-center relative xl:hidden md:left-[25%] md:-top-[10%]"><ProjectsBtn /></div>
           <motion.div
             className='hidden xl:flex'
             variants={fadeIn('down', 0.6)}
@@ -69,7 +69,7 @@ const Home = () => {
           animate='show'
           exit='hidden'
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"><Avatar /></motion.div>
+          className="w-full h-full max-w-[737px] max-h-[678px] md:max-w-[537px] md:max-h-[450px] lg:max-w-[737px] lg:max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[15%] md:bottom-0 md:left-[30%]"><Avatar /></motion.div>
       </div>
     </div>)
 };

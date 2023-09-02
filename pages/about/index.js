@@ -53,7 +53,7 @@ const aboutData = [
     info: [
       {
         title: "Employee of the Month (Jun 22) - SAUFIK",
-        stage: "2021",
+        // stage: "2021",
       }
     ],
   },
@@ -61,15 +61,15 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Junior Web Developer - Saufik Islamabad",
-        stage: "2020 - 2022",
+        title: "Jnr Web Dev - Saufik Isl, Pk",
+        stage: "2020 - 22",
       },
       {
-        title: "Intern Web Developer - Devsink Lahore",
-        stage: "2019 - 2020",
+        title: "Intern - Devsink Lhr, Pk",
+        stage: "2019 - 20",
       },
       {
-        title: "Freelancer - Normik Karachi",
+        title: "Freelancer - Normik Kci, Pk",
         stage: "2017 - 2018",
       },
     ],
@@ -82,7 +82,7 @@ const aboutData = [
         stage: "2016",
       },
       {
-        title: "Computer Science - Virtual University, ATK, PK",
+        title: "Computer Science - VU, ATK, PK",
         stage: "2012",
       },
     ],
@@ -101,18 +101,20 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]">
+        className="hidden xl:flex absolute bottom-0 -left-[380px]">
         <Avatar />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
+         
+         
           <motion.h2
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-xl lg:text-4xl mb-5 lg:mb-16 mt-5 lg:mt-15">
+            className="text-xl md:text-2xl lg:text-4xl mb-2 lg:mb-16 mt-2 lg:mt-15">
             Software engineer, <br /><span className="text-accent">Frontend</span> & Backend Developer.
           </motion.h2>
           <motion.p
@@ -120,9 +122,9 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-5 lg:mb-6 xl:mb-12 px-2 xl:px-0">
-            I am Shamail, a passionate developer from Islamabad, Pakistan, who writes clean, elegant and effecient code. 
-            <span className="hidden lg:visible"> My expertise is developing next-level websites and web applications including scalable frontend design with MVC design backend.</span>
+            className="max-w-[500px] md:max-w-[700px] mx-auto xl:mx-0 mb-2 md:mb-4 lg:mb-6 xl:mb-12 px-2 xl:px-0">
+            I am a passionate developer from Islamabad, Pakistan, who writes clean, elegant and effecient code.
+            <span className="hidden sm:inline md:inline"> My expertise is developing next-level websites and web applications including scalable frontend design with MVC design backend.</span>
           </motion.p>
           {/* Counters */}
           <motion.div
@@ -130,7 +132,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 md:mt-8">
             <div className="flex flex-1 xl:gap-x-6">
               {/* Experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
@@ -169,9 +171,9 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[48%] h-[360px] lg:pl-10">
+          className="flex flex-col w-full xl:max-w-[48%] md:max-w-[85%] h-[360px] lg:pl-10">
           {/* title */}
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 lg:mb-4 lg:mt-8 sm:mb-2 sm:mt-2">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 lg:mb-4 lg:mt-8 mb-2 mt-2">
             {aboutData.map((item, itemindex) => {
               return (
                 <div

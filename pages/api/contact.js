@@ -25,7 +25,7 @@ export default function handler(req, res) {
         else { console.log('Email sent: ' + info.response); }
     })
 
-    return res.status(200).json({ message: 'Hello from Next.js!' })
+    return res.status(200).json({ message: 'Check Email!' })
     // NextResponse.json({ message: 'Email sent successfully' })
 
 }

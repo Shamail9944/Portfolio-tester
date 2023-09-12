@@ -15,7 +15,7 @@ const workSlides = {
         {
           title: 'Youtube Clone',
           path: '/youtubeClone.jpg',
-          link: 'https://youtube-react-clone-by-sam-dev.netlify.app/'
+          link: 'https://youtube-react-clone9944.netlify.app/'
         },
         {
           title: 'Hangman Angular',

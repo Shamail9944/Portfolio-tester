@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto xxl:max-w-[1200px]">
+        <div className="text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto xl:max-w-[1100px] xxl:max-w-[1200px]">
           <motion.h1
             className="text-xl md:text-2xl lg:text-2xl md:mb-8 lg:mb-2"
             variants={fadeIn('down', 0.4)}
@@ -46,7 +46,7 @@ const Home = () => {
             I like to craft solid and scalable digital products with great user experience. Highly skilled at progressive enhancement of products design and database as per clients needs.
 
           </motion.p>
-          <div className="flex justify-center relative xl:hidden md:left-[25%] md:-top-[10%] lg:left-[15%] lg:-top-[17%]"><ProjectsBtn /></div>
+          <div className="flex justify-center relative xl:hidden md:left-[17%] md:-top-[0%] lg:left-[15%] lg:-top-[17%]"><ProjectsBtn /></div>
           <motion.div
             className='hidden xl:flex'
             variants={fadeIn('down', 0.6)}
@@ -73,10 +73,10 @@ const Home = () => {
           w-full h-full
           absolute -bottom-32
           max-w-[737px] max-h-[678px]
-          md:max-w-[537px] md:max-h-[450px] md:bottom-0 md:left-[0%]
-          lg:max-w-[437px] lg:max-h-[400px] lg:bottom-0 lg:left-[15%]
+          md:max-w-[472px] md:max-h-[510px] md:bottom-0 md:left-[0%]
+          lg:max-w-[510px] lg:max-h-[530px] lg:bottom-0 lg:left-[15%]
           xl:max-w-[737px] xl:max-h-[650px] xl:bottom-0 xl:left-[44%]
-          xxl:max-w-[737px] xxl:max-h-[650px] xxl:bottom-0 xxl:left-[55%]
+          xxl:max-w-[980px] xxl:max-h-[900px] xxl:bottom-0 xxl:left-[43%]
           "><Avatar /></motion.div>
       </div>
     </div>)

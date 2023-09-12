@@ -114,7 +114,7 @@ const About = () => {
         {/* w-full h-full max-w-[737px] max-h-[678px] md:max-w-[537px] md:max-h-[450px] lg:max-w-[737px] lg:max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[15%] md:bottom-0 md:left-[20%] */}
         <Avatar />
       </motion.div>
-      <div className="container mx-auto xl:ml-32 h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto xl:ml-24 xxl:ml-[32rem] h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center mt-9">
 

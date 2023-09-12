@@ -66,18 +66,18 @@ const ServiceSlider = () => {
       320: { slidesPerView: 1, spaceBetween: 15 },
       640: { slidesPerView: 2, spaceBetween: 15 },
       768: { slidesPerView: 3, spaceBetween: 15 },
-      1024: { slidesPerView: 4, spaceBetween: 15 },
+      1024: { slidesPerView: 3, spaceBetween: 15 },
 
     }}
       freeMode={true}
       pagination={{ clickable: true }}
       modules={[FreeMode, Pagination]}
-      className='md:h-[500px] lg:h-[390px] h-[300px]'
+      className='md:h-[500px] lg:h-[390px] h-[350px]'
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="bg-[rgba(65,47,123,0.15)] h-[90%] rounded-lg px-6 py-4 flex flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 items-center mb-10">
+            <div className="bg-[rgba(65,47,123,0.15)] h-[85%] rounded-lg px-6 py-4 flex flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 items-center">
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
               <div className='mb-8'>
                 <div className="mb-2 text-lg text-center">{item.title}</div>

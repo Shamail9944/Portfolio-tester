@@ -14,7 +14,7 @@ const Testimonials = () => {
           exit='hidden'
           transition={{ duration: 1, ease: 'easeInOut' }}
 
-          className="h2 mb-8 xl:mb-0">What clients <span className="text-accent">say</span> about me</motion.h2>
+          className="h2 mb-3 xl:mb-0 lg:text-5xl">What clients <span className="text-accent">say</span> about me</motion.h2>
         {/* slider */}
         <motion.div
         variants={fadeIn('down', 0.5)}

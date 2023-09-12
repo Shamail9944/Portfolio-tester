@@ -3,7 +3,8 @@ import Layout from "../components/Layout";
 import Transition from './../components/Transition';
 import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function MyApp({ Component, pageProps }) {
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
         <motion.div key={router.route} className="h-full">
           <Transition />
           <Component {...pageProps} />
+          <ToastContainer />
         </motion.div>
       </AnimatePresence>
     </Layout>

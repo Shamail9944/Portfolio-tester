@@ -7,9 +7,9 @@ import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket } from 'react-icons/rx
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-10 lg:py-36 flex ">
+    <div className="h-full bg-primary/30 py-10 lg:py-10 xl:py-28 flex ">
       <Circles />
-      <div className="container mx-auto">
+      <div className="container mx-auto self-center">
         <div className='flex flex-col gap-x-8 items-center'>
           {/* Text */}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
@@ -18,7 +18,7 @@ const Work = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='h2 xl:mt-0 md:mt-12 mt-8'>
+              className='h2 lg:text-4xl xl:mt-0 md:mt-12 lg:mt-8 mt-8'>
               My Projects <span className='text-accent'>.</span>
             </motion.h2>
             <motion.p
@@ -36,7 +36,7 @@ const Work = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="w-full xl:max-w-[55%] pt-2 lg:pt-10">
+            className="w-full xl:max-w-[55%] mt-2 lg:pt-2">
             <WorkSlider />
           </motion.div>
 

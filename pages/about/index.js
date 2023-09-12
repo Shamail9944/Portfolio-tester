@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from "react";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaAngular, FaBootstrap } from "react-icons/fa";
+import { FaHtml5, FaJs, FaReact, FaAngular, FaBootstrap } from "react-icons/fa";
 import { SiNextdotjs, SiFramer, } from "react-icons/si";
 import Avatar from "../../components/Avatar";
 import Circles from "./../../components/Circles";
@@ -101,21 +101,31 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[380px]">
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        className="
+        w-full h-full
+        max-w-[737px] max-h-[678px]
+        absolute
+        md:max-w-[537px] md:max-h-[450px] md:bottom-0 md:-left-[28%]
+        lg:max-w-[737px] lg:max-h-[563px] lg:bottom-0 lg:right-[5%]
+        xl:max-w-[737px] xl:max-h-[563px] xl:-bottom-16 xl:right-[5%]
+        ">
+        {/* hidden xl:flex absolute bottom-0 -left-[190px] */}
+        {/* w-full h-full max-w-[737px] max-h-[678px] md:max-w-[537px] md:max-h-[450px] lg:max-w-[737px] lg:max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[15%] md:bottom-0 md:left-[20%] */}
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto xl:ml-32 h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center">
-         
-         
+        <div className="flex-1 flex flex-col justify-center mt-9">
+
+
           <motion.h2
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-xl md:text-2xl lg:text-4xl mb-2 lg:mb-16 mt-2 lg:mt-15">
-            Software engineer, <br /><span className="text-accent">Frontend</span> & Backend Developer.
+            className="text-xl md:text-2xl lg:text-4xl mb-2 lg:mb-5 mt-2 lg:mt-15">
+            <span className="text-accent">Full Stack </span>Software engineer
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -132,7 +142,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 md:mt-8">
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 xl:ml-13 mb-8 lg:mb-0">
             <div className="flex flex-1 xl:gap-x-6">
               {/* Experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
@@ -171,7 +181,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[48%] md:max-w-[85%] h-[360px] lg:pl-10">
+          className="flex flex-col w-full xl:max-w-[55%] md:max-w-[85%] h-[360px] lg:pl-10">
           {/* title */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 lg:mb-4 lg:mt-8 mb-2 mt-2">
             {aboutData.map((item, itemindex) => {

@@ -1,8 +1,7 @@
 import nodemailer from 'nodemailer'
 import { NextResponse } from "next/server";
 
-export default function handler(req, res) {
-    // const body = req.json();
+function handler(req, res) {
     console.log(req.body);
 
     const transporter = nodemailer.createTransport({
@@ -29,4 +28,4 @@ export default function handler(req, res) {
     // NextResponse.json({ message: 'Email sent successfully' })
 
 }
-
+handler();

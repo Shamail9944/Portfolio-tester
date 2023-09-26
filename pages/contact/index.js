@@ -37,7 +37,7 @@ const Contact = () => {
               if (submitted) { return; }
               setName(""); setEmail(""); setSubject(""); setMessage(""); setSubmitted(true);
               console.log(name, email, subject, message);
-              fetch("/api/contact", {
+              fetch("/netlify/functions/contact", {
                 method: "POST",
                 // headers: { "Content-Type": "application/json" },
                 // body: JSON.stringify({ name, email, subject, message }),

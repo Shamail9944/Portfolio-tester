@@ -30,19 +30,17 @@ const Contact = () => {
             Lets <span className='text-accent'>Connect</span>.
           </motion.h2>
 
-          <motion.form variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit='hidden' transition={{ duration: 1, ease: 'easeInOut' }} className='flex flex-1 flex-col gap-6 w-full mx-auto' data-netlify="true"
+          <motion.form  variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit='hidden' transition={{ duration: 1, ease: 'easeInOut' }} className='flex flex-1 flex-col gap-6 w-full mx-auto'
 
             onSubmit={(e) => {
               e.preventDefault();
               if (submitted) { return; }
               setName(""); setEmail(""); setSubject(""); setMessage(""); setSubmitted(true);
               console.log(name, email, subject, message);
-              fetch("/netlify/functions/contact", {
+              fetch("api/contact", {
                 method: "POST",
-                // headers: { "Content-Type": "application/json" },
-                // body: JSON.stringify({ name, email, subject, message }),
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams({ name, email, subject, message }).toString(),
+                body: JSON.stringify({ name, email, subject, message }),
+                headers: { "Content-Type": "application/json" },
               }).then((res) => {
                 if (!res.ok) {
                   toast.error('Failed to send email, try social links at top right corner.', {

@@ -1,12 +1,12 @@
-import { NextResponse } from "next/server";
 import nodemailer from 'nodemailer'
+import { NextResponse } from "next/server";
 
 export default function handler(req, res) {
     // const body = req.json();
     console.log(req.body);
 
     const transporter = nodemailer.createTransport({
-        service: 'Gmail',
+        service: 'gmail',
         auth: {
             user: 'shamail130silverhawk@gmail.com',
             pass: 'flnpdqrmosnklpfk'
@@ -17,7 +17,7 @@ export default function handler(req, res) {
         from: req.body.email,
         to: 'shamail130silverhawk@gmail.com',
         subject: req.body.subject,
-        text: 'Client Name: ' + req.body.name + '\nClient Email: ' + req.body.email + '\nClient Subject: ' + req.body.subject + '\nMessage: ' + req.body.message
+        text: 'Client Name: ' + req.body.name + '\nClient Email: ' + req.body.email + '\nClient Subject: ' + req.body.subject + '\nMessage: ' + req.body.message,
     }
 
     transporter.sendMail(mailOptions, (error, info) => {

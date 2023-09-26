@@ -107,16 +107,16 @@ const About = () => {
         max-w-[737px] max-h-[678px]
         absolute
         md:max-w-[537px] md:max-h-[450px] md:bottom-0 md:-left-[28%]
-        lg:max-w-[737px] lg:max-h-[563px] lg:bottom-0 lg:right-[5%]
-        xl:max-w-[737px] xl:max-h-[563px] xl:-bottom-16 xl:right-[5%]
+        lg:max-w-[737px] lg:max-h-[488px] lg:bottom-0 lg:-left[36%]
+        xl:max-w-[737px] xl:max-h-[563px] xl:-bottom-16 xl:-left-[20%]
         ">
         {/* hidden xl:flex absolute bottom-0 -left-[190px] */}
         {/* w-full h-full max-w-[737px] max-h-[678px] md:max-w-[537px] md:max-h-[450px] lg:max-w-[737px] lg:max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[15%] md:bottom-0 md:left-[20%] */}
-        <Avatar />
+        <Avatar priority={false}/>
       </motion.div>
-      <div className="container mx-auto xl:ml-24 xxl:ml-[32rem] h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto  xxl:ml-[32rem] h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center mt-9">
+        <div className="flex-1 flex flex-col justify-center mt-0 md:mt-9 ">
 
 
           <motion.h2
@@ -132,7 +132,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] md:max-w-[700px] mx-auto xl:mx-0 mb-2 md:mb-4 lg:mb-6 xl:mb-12 px-2 xl:px-0">
+            className="max-w-[500px] md:max-w-[700px] mx-auto xl:mx-0 mb-2 md:mb-4 lg:mb-6 xl:mb-12 px-2 xl:px-0 ">
             I am a passionate developer from Islamabad, Pakistan, who writes clean, elegant and effecient code.
             <span className="hidden sm:inline md:inline"> My expertise is developing next-level websites and web applications including scalable frontend design with MVC design backend.</span>
           </motion.p>

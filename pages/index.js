@@ -77,7 +77,7 @@ const Home = () => {
           lg:max-w-[510px] lg:max-h-[530px] lg:bottom-0 lg:left-[15%]
           xl:max-w-[737px] xl:max-h-[650px] xl:bottom-0 xl:left-[44%]
           xxl:max-w-[980px] xxl:max-h-[900px] xxl:bottom-0 xxl:left-[43%]
-          "><Avatar /></motion.div>
+          "><Avatar priority={false}/></motion.div>
       </div>
     </div>)
 };

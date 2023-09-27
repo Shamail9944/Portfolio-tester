@@ -9,7 +9,7 @@ module.exports = {
     return [
       {
         // matching all API routes
-        source: "https://www.facebook.com/plugins/customer_chat/SDK/*",
+        source: "https://www.facebook.com/plugins/customer_chat/SDK*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },

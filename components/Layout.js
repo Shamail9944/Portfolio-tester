@@ -2,7 +2,6 @@ import { Sora } from '@next/font/google'
 import Nav from '../components/Nav'
 import Header from '../components/Header'
 import TopLeftImg from '../components/TopLeftImg'
-import FacebookMsg from './FacebookMsg'
 
 
 // font setting
@@ -19,7 +18,6 @@ const Layout = ({ children }) => {
       <Nav />
       <Header />
       {children}
-      <FacebookMsg />
     </div>
   )
 }

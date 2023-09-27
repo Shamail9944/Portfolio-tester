@@ -4,6 +4,7 @@ import { fadeIn } from './../../variants';
 import { useState } from 'react';
 import { useRouter } from 'next/router'
 import { toast } from 'react-toastify';
+import FacebookMsg from './../../components/FacebookMsg';
 
 
 const Contact = () => {
@@ -86,6 +87,7 @@ const Contact = () => {
           </motion.form>
         </div>
       </div>
+      <FacebookMsg />
     </div >
   );
 };

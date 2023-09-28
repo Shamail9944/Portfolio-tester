@@ -89,7 +89,7 @@ const Contact = () => {
         </div>
       </div>
     </div >
-      <FacebookMsg />
+      {/* <FacebookMsg /> */}
     </>
   );
 };

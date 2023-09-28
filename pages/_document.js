@@ -22,6 +22,7 @@ export default function Document() {
                 var chatbox = document.getElementById('fb-customer-chat');
                 chatbox.setAttribute("page_id", "139168849275585");
                 chatbox.setAttribute("attribution", "biz_inbox");          
+                chatbox.setAttribute("pageId", "139168849275585");          
             }`,
           }}
         ></Script>

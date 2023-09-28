@@ -9,6 +9,7 @@ export default function Document() {
       </Head>
       <body>
         {/* <!-- Messenger Chat plugin Code --> */}
+        {/* <!-- Messenger Chat plugin Code --> */}
         <div id="fb-root"></div>
 
         {/* <!-- Your Chat plugin code --> */}

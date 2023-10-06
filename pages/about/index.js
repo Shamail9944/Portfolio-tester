@@ -210,7 +210,7 @@ const About = () => {
                   <div className="flex gap-x-4 flex-wrap ">
                     {/* xx Icons */}
                     {item.icons?.map((icon, itemindex) => {
-                      return <div key={itemindex} className="text-2xl text-white hover:text-accent">{icon}</div>;
+                      return <div key={itemindex} className=" text-2xl text-white hover:text-accent">{icon}</div>;
                     })}
                   </div>
                 </div>

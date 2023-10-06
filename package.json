@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "13.4.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "@next/font": "^13.4.4",
     "cors": "^2.8.5",
     "framer-motion": "^10.12.16",
-    "next": "13.4.3",
     "nodemailer": "^6.9.4",
-    "react": "18.2.0",
     "react-countup": "^6.4.2",
-    "react-dom": "18.2.0",
     "react-facebook": "^9.0.12",
     "react-icons": "^4.8.0",
     "react-simple-typewriter": "^5.0.1",

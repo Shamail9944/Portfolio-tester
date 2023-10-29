@@ -13,6 +13,11 @@ const workSlides = {
     {
       images: [
         {
+          title: 'Courier Website',
+          path: '/youtubeClone.jpg',
+          link: 'https://courier-x.netlify.app/'
+        },
+        {
           title: 'Youtube Clone',
           path: '/youtubeClone.jpg',
           link: 'https://youtube-react-clone9944.netlify.app/'

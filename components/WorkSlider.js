@@ -18,29 +18,29 @@ const workSlides = {
           link: 'https://courier-x.netlify.app/'
         },
         {
-          title: 'Youtube Clone',
-          path: '/youtubeClone.jpg',
-          link: 'https://youtube-react-clone9944.netlify.app/'
-        },
-        {
           title: 'Hangman Angular',
           path: '/AngularHangman.jpg',
           link: 'https://shamail9944.github.io/Angular-Hangman/'
-        },
-        {
-          title: 'Netflix Clone',
-          path: '/thumb3.jpg',
-          link: 'https://netflix-angular-tmdb-api.netlify.app'
         },
         {
           title: 'EcomStore - FakeAPI',
           path: '/thumb4.jpg',
           link: 'https://ecom-store-angular-fake-store-api.netlify.app'
         },
+        {
+          title: 'Netflix Clone',
+          path: '/thumb3.jpg',
+          link: 'https://netflix-angular-tmdb-api.netlify.app'
+        },
       ],
     },
     {
       images: [
+        {
+          title: 'Youtube Clone',
+          path: '/youtubeClone.jpg',
+          link: 'https://youtube-react-clone9944.netlify.app/'
+        },
         {
           title: 'JS - Reveal Landing Page',
           path: '/thumb1.jpg',
@@ -58,19 +58,19 @@ const WorkSlider = () => {
       spaceBetween={10}
       pagination={{ clickable: true }}
       modules={[Pagination]}
-      className='h-[320px] md:h-[470px] lg:h-[480px] xl:h-[480px]'
+      className='h-[320px] md:h-[470px] lg:h-[480px] xl:h-[400px]'
     >
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 gap-4 md:gap-8 cursor-pointer">
+            <div className="grid grid-cols-2 gap-4 md:gap-4 cursor-pointer">
               {/* grid-rows-2 */}
               {slide.images.map((image, index) => {
                 return (
                   <div key={index} className="relative overflow-hidden flex group items-center justify-center">
                     <Link href={image.link}>
                       <div className="flex items-center rounded-lg justify-center relative overflow-hidden group">
-                        <Image src={image.path} height={500} width={300} alt="" />
+                        <Image src={image.path} height={250} width={250} alt="" />
                         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                         {/* title */}
                         <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-18 transition-all duration-300">
@@ -81,7 +81,7 @@ const WorkSlider = () => {
                           </div>
                         </div>
                       </div>
-                      <div className=" text-center mt-2 text-orange-500">{image.title}</div>
+                      <div className="text-center mt-2 text-orange-500 text-sm">{image.title}</div>
                     </Link>
                   </div>
                 )

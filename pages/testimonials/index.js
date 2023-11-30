@@ -6,7 +6,7 @@ import { fadeIn } from '../../variants';
 const Testimonials = () => {
   return (
     <div className="h-full bg-primary/30 py-32  text-center">
-      <div className="container mx-auto h-full flex flex-col justify-center">
+      <div className="container mx-auto h-full flex flex-col justify-center lg:max-w-[1000px]">
         <motion.h2
           variants={fadeIn('up', 0.5)}
           initial='hidden'
@@ -14,7 +14,7 @@ const Testimonials = () => {
           exit='hidden'
           transition={{ duration: 1, ease: 'easeInOut' }}
 
-          className="h2 mb-3 xl:mb-0 lg:text-5xl">What clients <span className="text-accent">say</span> about me</motion.h2>
+          className="h2 mb-3 xl:mb-0 lg:text-4xl">What clients <span className="text-accent">say</span> about me</motion.h2>
         {/* slider */}
         <motion.div
         variants={fadeIn('down', 0.5)}

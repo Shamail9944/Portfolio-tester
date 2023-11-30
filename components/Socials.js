@@ -4,7 +4,7 @@ import { TfiTwitter } from 'react-icons/tfi'
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-2 lg:gap-x-6 text-2xl">
+    <div className="flex items-center gap-x-2 lg:gap-x-6 text-2xl lg:mr-44">
       <Link target="_blank" href={'https://www.linkedin.com/in/shamail-bin-wasif-7b1982182/'} className="hover:text-accent transition-all duration-300"><RiLinkedinBoxLine /></Link>
       <Link target="_blank" href={'https://github.com/Shamail9944'} className="hover:text-accent transition-all duration-300"><RiGithubLine /></Link>
       {/* <Link target="_blank" href={''} className="hover:text-accent transition-all duration-300"><TfiTwitter /></Link> */}

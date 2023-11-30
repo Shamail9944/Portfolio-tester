@@ -46,7 +46,7 @@ const TestimonialSlider = () => {
           <SwiperSlide key={index}>
             <div className="flex flex-col items-center lg:flex-row gap-x-8 h-full px-16">
               {/* avatar, name, position */}
-              <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
+              <div className="w-full max-w-[152px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
                   <div className="mb-2 mx-auto">
                     <Image src={person.image} height={100} width={100} alt="" />
@@ -56,9 +56,9 @@ const TestimonialSlider = () => {
                 </div>
               </div>
               {/* quotes & messages */}
-              <div className="flex flex-col md:flex-row lg:flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
-                <div className="mb-4" ><FaQuoteLeft className="text-xl lg:text-6xl xl:text-6xl text-white/20 mx-auto md:mx-3" /></div>
-                <div className="text-sm xl:text-lg text-center md:text-left">{person.message}</div>
+              <div className="flex flex-col md:flex-row lg:flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-10">
+                <div className="mb-4" ><FaQuoteLeft className="text-xl lg:text-6xl xl:text-5xl text-white/20 mx-auto md:mx-3" /></div>
+                <div className="text-sm xl:text-md text-center md:text-left">{person.message}</div>
               </div>
             </div>
           </SwiperSlide>

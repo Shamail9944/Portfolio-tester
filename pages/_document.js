@@ -9,12 +9,10 @@ export default function Document() {
       </Head>
       <body>
         {/* <!-- Messenger Chat plugin Code --> */}
-        {/* <!-- Messenger Chat plugin Code --> */}
-        <div id="fb-root"></div>
-
+        {/* <div id="fb-root"></div> */}
         {/* <!-- Your Chat plugin code --> */}
-        <div id="fb-customer-chat" class="fb-customerchat"></div>
-        <Script
+        {/* <div id="fb-customer-chat" class="fb-customerchat"></div> */}
+        {/* <Script
           id="messenger-tag"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -46,7 +44,7 @@ export default function Document() {
               }(document, 'script', 'facebook-jssdk'));
         }`,
           }}
-        ></Script>
+        ></Script> */}
         <Main />
         <NextScript />
       </body>

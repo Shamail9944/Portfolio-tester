@@ -17,6 +17,9 @@ import { GiJasmine, } from "react-icons/gi";
 import { GrMysql } from "react-icons/gr";
 import { TbApi } from "react-icons/tb";
 import { FaNode } from "react-icons/fa";
+import localFont from "next/font/local";
+const myFont= localFont({src:"../../public/fonts/Pepperidge.otf"})
+
 //  data
 const aboutData = [
   {
@@ -52,8 +55,8 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Employee of the Month (Jun 22) - SAUFIK",
-        // stage: "2021",
+        title: "Employee of the Month - SAUFIK",
+        stage: "Jun 2022",
       }
     ],
   },
@@ -65,11 +68,11 @@ const aboutData = [
         stage: "2020 - 22",
       },
       {
-        title: "Intern - Devsink Lhr, Pk",
+        title: "Intern - Saufik Isl, Pk",
         stage: "2019 - 20",
       },
       {
-        title: "Freelancer - Normik Kci, Pk",
+        title: "Freelancer - Fiver/ Outsource",
         stage: "2017 - 2018",
       },
     ],
@@ -96,7 +99,9 @@ const About = () => {
   return (
     <div className="h-full bg-primary/30 py-12 text-center xl:text-left">
       <Circles />
-      <motion.div
+      
+      {/* Picture */}
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -110,13 +115,13 @@ const About = () => {
         lg:max-w-[737px] lg:max-h-[488px] lg:bottom-0 lg:-left[36%]
         xl:max-w-[737px] xl:max-h-[563px] xl:-bottom-16 xl:-left-[20%]
         ">
-        {/* hidden xl:flex absolute bottom-0 -left-[190px] */}
-        {/* w-full h-full max-w-[737px] max-h-[678px] md:max-w-[537px] md:max-h-[450px] lg:max-w-[737px] lg:max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[15%] md:bottom-0 md:left-[20%] */}
         <Avatar priority={false}/>
-      </motion.div>
+      </motion.div> */}
+
       <div className="container mx-auto  xxl:ml-[32rem] h-full flex flex-col items-center xl:flex-row gap-x-6">
+
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center mt-0 md:mt-9 ">
+        <div className="flex-1 flex flex-col items-center justify-center mt-0 md:mt-9 ">
 
 
           <motion.h2
@@ -124,15 +129,16 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-xl md:text-2xl lg:text-4xl mb-2 lg:mb-5 mt-2 lg:mt-15">
-            <span className="text-accent">Full Stack </span>Software engineer
+            style={myFont.style}
+            className="text-xl md:text-2xl lg:text-6xl mb-2 lg:mb-5 mt-2 lg:mt-15 tracking-wide">
+            <span  className="text-accent">Full Stack </span>Software Engineer
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] md:max-w-[700px] mx-auto xl:mx-0 mb-2 md:mb-4 lg:mb-6 xl:mb-12 px-2 xl:px-0 ">
+            className="max-w-[500px] md:max-w-[700px] mx-auto xl:mx-0 mb-2 md:mb-4 lg:mb-6 xl:mb-6 px-2 xl:px-0 text-center">
             I am a passionate developer from Islamabad, Pakistan, who writes clean, elegant and effecient code.
             <span className="hidden sm:inline md:inline"> My expertise is developing next-level websites and web applications including scalable frontend design with MVC design backend.</span>
           </motion.p>
@@ -142,46 +148,46 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 xl:ml-13 mb-8 lg:mb-0">
-            <div className="flex flex-1 xl:gap-x-6">
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 xl:ml-13 mb-8 lg:mb-14">
+            <div className="flex flex-1 xl:gap-x-8">
               {/* Experience */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold mb-2 text-accent ">
+              <div className="flex flex-col items-center relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 lg:pr-10">
+                <div className="text-2xl xl:text-2xl font-extrabold mb-2 text-accent ">
                   <CountUp start={0} end={3} duration={5} />+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">
+                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px] text-center">
                   Years of Experience
                 </div>
               </div>
               {/* clients */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold mb-2 text-accent ">
+              <div className="flex flex-col items-center relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 lg:pr-10">
+                <div className="text-2xl xl:text-2xl font-extrabold mb-2 text-accent ">
                   <CountUp start={0} end={28} duration={5} />+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">
+                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px] text-center">
                   Satisfied Clients
                 </div>
               </div>
               {/* projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold mb-2 text-accent ">
+              <div className="flex flex-col items-center relative flex-1">
+                <div className="text-2xl xl:text-2xl font-extrabold mb-2 text-accent ">
                   <CountUp start={0} end={41} duration={5} />+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px]">
+                <div className="text-xs uppercase tracking-[1px] loading-[1.4] max-w-[100px] text-center">
                   Delivered projects
                 </div>
               </div>
             </div>
           </motion.div>
         </div>
-        {/* Info */}
 
+        {/* Info */}
         <motion.div
           variants={fadeIn('left', 0.8)}
           initial="hidden"
           animate="show"
           exit='hidden'
-          className="flex flex-col w-full xl:max-w-[55%] md:max-w-[85%] h-[360px] lg:pl-10">
+          className="lg:flex-1 flex flex-col w-full xl:max-w-[55%] md:max-w-[85%] h-[360px] lg:pl-10">
           {/* title */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 lg:mb-4 lg:mt-8 mb-2 mt-2">
             {aboutData.map((item, itemindex) => {
@@ -218,6 +224,7 @@ const About = () => {
             })}
           </div>
         </motion.div>
+
       </div>
     </div>
   );

@@ -12,13 +12,13 @@ const Work = () => {
       <div className="container mx-auto self-center">
         <div className='flex flex-col gap-x-8 items-center'>
           {/* Text */}
-          <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
+          <div className='text-center flex xl:w-[30vw] flex-col mb-4 xl:mb-0'>
             <motion.h2
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='h2 lg:text-4xl xl:mt-0 md:mt-12 lg:mt-8 mt-8'>
+              className='lg:text-3xl xl:mt-16 md:mt-12 lg:mt-8 mt-8 mb-8'>
               My Projects <span className='text-accent'>.</span>
             </motion.h2>
             <motion.p

@@ -121,7 +121,7 @@ const About = () => {
       <div className="container mx-auto  xxl:ml-[32rem] h-full flex flex-col items-center xl:flex-row gap-x-6">
 
         {/* text */}
-        <div className="flex-1 flex flex-col items-center justify-center mt-0 md:mt-9 ">
+        <div className="lg:flex-1 flex flex-col items-center justify-center mt-9 md:mt-9 ">
 
 
           <motion.h2
@@ -187,7 +187,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit='hidden'
-          className="lg:flex-1 flex flex-col w-full xl:max-w-[55%] md:max-w-[85%] h-[360px] lg:pl-10">
+          className="flex-1 flex flex-col w-full xl:max-w-[55%] md:max-w-[85%] h-[360px] lg:pl-10">
           {/* title */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 lg:mb-4 lg:mt-8 mb-2 mt-2">
             {aboutData.map((item, itemindex) => {

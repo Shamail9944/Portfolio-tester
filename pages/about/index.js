@@ -130,7 +130,7 @@ const About = () => {
             animate="show"
             exit="hidden"
             style={myFont.style}
-            className="text-xl md:text-2xl lg:text-6xl mb-2 lg:mb-5 mt-2 lg:mt-15 tracking-wide">
+            className="text-4xl md:text-2xl lg:text-6xl mb-2 lg:mb-5 mt-2 lg:mt-15 tracking-wide">
             <span  className="text-accent">Full Stack </span>Software Engineer
           </motion.h2>
           <motion.p

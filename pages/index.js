@@ -27,7 +27,7 @@ const Home = () => {
             animate='show'
             exit='hidden'
           >
-            Hi !<br /> I am{' '}
+            Hello !<br /><br /> I am{' '}<br /><br />
             <span className="block lg:hidden">{' '}</span>
             <span style={myFont.style} className="text-white text-4xl md:text-2xl lg:text-3xl xl:text-6xl tracking-widest lg:tracking-wider ">{text}</span><Cursor cursorStyle='|' />
           </motion.h1>
@@ -37,7 +37,9 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-          >Transforming Ideas Into <span className="text-accent">Digital Marvels</span> ...
+          >Transforming Ideas Into
+            <span className="lg:hidden"><br /></span>
+            <span className="text-accent">{' '}Digital Marvels</span> ...
           </motion.h1>
           <motion.p
             className="

@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/router'
 import { toast } from 'react-toastify';
 import FacebookMsg from './../../components/FacebookMsg';
+import localFont from "next/font/local";
+const myFont= localFont({src:"../../public/fonts/Pepperidge.otf"})
 
 
 const Contact = () => {
@@ -27,7 +29,8 @@ const Contact = () => {
             animate='show'
             exit='hidden'
             transition={{ duration: 1, ease: 'easeInOut' }}
-            className="text-center my-5 lg:my-6 text-xl lg:text-4xl">
+            style={myFont.style}
+            className="text-center my-5 lg:my-6 text-6xl lg:text-2xl xl:text-6xl">
             Lets <span className='text-accent'>Connect</span>.
           </motion.h2>
 

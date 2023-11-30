@@ -4,6 +4,8 @@ import Circles from './../../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from './../../variants';
 import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket } from 'react-icons/rx'
+import localFont from "next/font/local";
+const myFont= localFont({src:"../../public/fonts/Pepperidge.otf"})
 
 const Work = () => {
   return (
@@ -18,7 +20,8 @@ const Work = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='lg:text-3xl xl:mt-16 md:mt-12 lg:mt-8 mt-8 mb-8'>
+              style={myFont.style}
+              className='text-6xl lg:text-2xl xl:text-6xl xl:mt-16 md:mt-12 lg:mt-8 mt-8 mb-8'>
               My Projects <span className='text-accent'>.</span>
             </motion.h2>
             <motion.p

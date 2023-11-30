@@ -4,6 +4,8 @@ import Circles from './../../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from './../../variants';
 import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket } from 'react-icons/rx'
+import localFont from "next/font/local";
+const myFont= localFont({src:"../../public/fonts/Pepperidge.otf"})
 
 const Services = () => {
   return (
@@ -18,7 +20,8 @@ const Services = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='xl:mt-8 text-2xl mb-5'>
+              style={myFont.style}
+              className='xl:mt-8 mb-5 text-6xl lg:text-2xl xl:text-6xl'>
               My Services <span className='text-accent'>.</span>
             </motion.h2>
           </div>

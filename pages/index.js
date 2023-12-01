@@ -10,7 +10,7 @@ const myFont= localFont({src:"../public/fonts/Pepperidge.otf"})
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ['Full Stack Dev','Mern / Mean Dev','Next JS Dev' ],
+    words: ['Full Stack Dev','Mern / Mean Dev','React JS Dev','Next JS Dev','Angular JS Dev' ],
     loop: {},
     typeSpeed: 40,
     deleteSpeed: 100,

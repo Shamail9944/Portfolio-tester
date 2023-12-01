@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container mx-auto xl:max-w-[1200px] xxl:max-w-[1200px]">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-2 lg:gap-y-6">
           <Link href={'/'}>
-            <h2 style={myFont.style} className="text-4xl lg:text-2xl xl:text-6xl">Shamail <span className="text-accent text-2xl lg:text-2xl xl:text-6xl">B. Wasif</span></h2>
+            <h2 style={myFont.style} className="text-6xl lg:text-2xl xl:text-6xl">Shamail <span className="text-accent text-2xl lg:text-2xl xl:text-6xl">B. Wasif</span></h2>
           </Link>
           <Socials />
         </div>

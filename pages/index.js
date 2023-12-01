@@ -30,7 +30,7 @@ const Home = () => {
             Hello!{' '}I am{' '}...
             <br /><br />
             <span className="block lg:hidden">{' '}</span>
-            <span style={myFont.style} className="text-white text-4xl md:text-2xl lg:text-3xl xl:text-6xl tracking-widest lg:tracking-wider ">{text}</span><Cursor cursorStyle='|' />
+            <span style={myFont.style} className="text-white text-6xl md:text-2xl lg:text-3xl xl:text-6xl tracking-widest lg:tracking-wider ">{text}</span><Cursor cursorStyle='|' />
           </motion.h1>
           <motion.h1
             className="text-lg md:text-2xl lg:text-xl xl:text-md md:mb-8 lg:mb-2 mt-10 lg:mt-0"

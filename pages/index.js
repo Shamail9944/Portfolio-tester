@@ -21,7 +21,7 @@ const Home = () => {
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto xl:max-w-[1200px] xxl:max-w-[1200px]">
           <motion.h1
-            className="text-sm my-3 md:mb-8 lg:mb-20 text-accent"
+            className="text-lg my-3 md:mb-8 lg:mb-20 "
             variants={fadeIn('down', 0.9)}
             initial='hidden'
             animate='show'

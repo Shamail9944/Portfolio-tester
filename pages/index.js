@@ -40,7 +40,7 @@ const Home = () => {
             exit='hidden'
           >Transforming Ideas Into
             <span className="lg:hidden"><br /></span>
-            <span className="text-accent">{' '}Digital Marvels</span> ...
+            <span style={myFont.style} className="text-accent text-5xl tracking-wider">{' '}Digital Marvels</span> ...
           </motion.h1>
           <motion.p
             className="

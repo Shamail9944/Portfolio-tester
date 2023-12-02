@@ -14,22 +14,22 @@ const workSlides = {
       images: [
         {
           title: 'Courier Website',
-          path: '/youtubeClone.jpg',
+          path: '/logistics-final.jpg',
           link: 'https://courier-x.netlify.app/'
         },
         {
           title: 'Hangman Angular',
-          path: '/AngularHangman.jpg',
+          path: '/hangman-new.jpeg',
           link: 'https://shamail9944.github.io/Angular-Hangman/'
         },
         {
           title: 'EcomStore - FakeAPI',
-          path: '/thumb4.jpg',
+          path: '/Ecom-final.jpg',
           link: 'https://ecom-store-angular-fake-store-api.netlify.app'
         },
         {
           title: 'Netflix Clone',
-          path: '/thumb3.jpg',
+          path: '/netflix-final.jpg',
           link: 'https://netflix-angular-tmdb-api.netlify.app'
         },
       ],
@@ -38,12 +38,12 @@ const workSlides = {
       images: [
         {
           title: 'Youtube Clone',
-          path: '/youtubeClone.jpg',
+          path: '/yt-final.jpg',
           link: 'https://youtube-react-clone9944.netlify.app/'
         },
         {
           title: 'JS - Reveal Landing Page',
-          path: '/thumb1.jpg',
+          path: '/JS-reveal.jpg',
           link: 'https://js-reveal-9944.netlify.app'
         },
       ],

@@ -18,28 +18,28 @@ const workSlides = {
           link: 'https://courier-x.netlify.app/'
         },
         {
-          title: 'Hangman Angular',
-          path: '/hangman-new.jpeg',
-          link: 'https://shamail9944.github.io/Angular-Hangman/'
-        },
-        {
-          title: 'EcomStore - FakeAPI',
-          path: '/Ecom-final.jpg',
-          link: 'https://ecom-store-angular-fake-store-api.netlify.app'
-        },
-        {
           title: 'Netflix Clone',
           path: '/netflix-final.jpg',
           link: 'https://netflix-angular-tmdb-api.netlify.app'
+        },
+        {
+          title: 'Youtube Clone',
+          path: '/yt-final.jpg',
+          link: 'https://youtube-react-clone9944.netlify.app/'
+        },
+        {
+          title: 'Hangman Angular',
+          path: '/hangman-new.jpeg',
+          link: 'https://shamail9944.github.io/Angular-Hangman/'
         },
       ],
     },
     {
       images: [
         {
-          title: 'Youtube Clone',
-          path: '/yt-final.jpg',
-          link: 'https://youtube-react-clone9944.netlify.app/'
+          title: 'EcomStore - FakeAPI',
+          path: '/Ecom-final.jpg',
+          link: 'https://ecom-store-angular-fake-store-api.netlify.app'
         },
         {
           title: 'JS - Reveal Landing Page',

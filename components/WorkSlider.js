@@ -47,6 +47,11 @@ const workSlides = {
           link: 'https://ecom-store-angular-fake-store-api.netlify.app'
         },
         {
+          title: 'EcomStore - Redux - Tailwind',
+          path: '/redux.jpg',
+          link: 'https://deploy-mern-frontend-sable.vercel.app/'
+        },
+        {
           title: 'JS - Reveal Landing Page',
           path: '/JS-reveal.jpg',
           link: 'https://js-reveal-9944.netlify.app'

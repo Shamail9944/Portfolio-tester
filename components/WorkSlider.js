@@ -28,14 +28,19 @@ const workSlides = {
           link: 'https://youtube-react-clone9944.netlify.app/'
         },
         {
-          title: 'Hangman Angular',
-          path: '/hangman-new.jpeg',
-          link: 'https://shamail9944.github.io/Angular-Hangman/'
+          title: 'POS - Demo',
+          path: '/POS.jpg',
+          link: 'https://pos-client-lovat.vercel.app'
         },
       ],
     },
     {
       images: [
+        {
+          title: 'Hangman Angular',
+          path: '/hangman-new.jpeg',
+          link: 'https://shamail9944.github.io/Angular-Hangman'
+        },
         {
           title: 'EcomStore - FakeAPI',
           path: '/Ecom-final.jpg',
